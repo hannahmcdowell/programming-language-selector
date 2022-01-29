@@ -18,6 +18,15 @@ function findMode(array) {
   return mode;
 }
 
+function isValid(array) {
+  for(let i = 0; i < array.length; i += 1) {
+    if(!array[i]) {
+      return false;
+    } 
+  }
+  return true;
+}
+
 // User Interface Logic
 $(document).ready(function() {
   $("#survey").submit(function(event) {
@@ -42,6 +51,7 @@ $(document).ready(function() {
 
     // determine which language the user should learn and show appropriate response
     const responses = [question1Val, question2Val, question3Val, question4Val, question5Val];
+    const valid = isValid(responses);
     const responsesMode = findMode(responses);
     if(responsesMode === "a") {
       $("#pythonCard").show();
