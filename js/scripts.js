@@ -47,14 +47,15 @@ $(document).ready(function() {
     const question4Val = $("input:radio[name=question4]:checked").val();
     const question5Val = $("input:radio[name=question5]:checked").val();
 
-    // append the userName to each yourName span
-    $(".yourName").text(userName);
-
     // determine which language the user should learn and show appropriate response
     const responses = [question1Val, question2Val, question3Val, question4Val, question5Val];
     const radioValid = isValid(responses);
     if(radioValid && userName) {
+      // append the userName to each yourName span
+      $(".yourName").text(userName);
+      // find the mode of the responses
       const responsesMode = findMode(responses);
+      // use the mode to show the appropriate card
       if(responsesMode === "a") {
         $("#pythonCard").show();
       } else if(responsesMode === "b") {
@@ -67,6 +68,5 @@ $(document).ready(function() {
     } else {
       $("#invalidResponse").show();
     }
-    
   });
 });
