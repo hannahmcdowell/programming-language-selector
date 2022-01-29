@@ -9,3 +9,7 @@
 .container {
   margin-bottom: 3em;
 }
+
+#pythonCard, #javaScriptCard, #javaCard, #cCard {
+  display: none;
+}
