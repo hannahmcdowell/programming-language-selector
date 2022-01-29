@@ -52,8 +52,8 @@ $(document).ready(function() {
 
     // determine which language the user should learn and show appropriate response
     const responses = [question1Val, question2Val, question3Val, question4Val, question5Val];
-    const valid = isValid(responses);
-    if(valid) {
+    const radioValid = isValid(responses);
+    if(radioValid && userName) {
       const responsesMode = findMode(responses);
       if(responsesMode === "a") {
         $("#pythonCard").show();
