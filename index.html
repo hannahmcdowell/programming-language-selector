@@ -3,7 +3,7 @@
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/jquery.3.6.0.js"></script>
+  <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
   <title>Programming Language Suggestor</title>
 </head>
@@ -15,7 +15,7 @@
     </div>
   </div>
   <div class="container">
-    <form class="form-style">
+    <form class="form-style" id="survey">
       <div class="form-group">
         <label for="name" class="form-label">First name</label>
         <input id="name" type="text" class="form-control">
@@ -23,25 +23,25 @@
       <div class="form-group">
         <p>Which level of difficulty are you ready for?</p>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question1" id="q1A">
+          <input class="form-check-input" type="radio" name="question1" value="a" id="q1A">
           <label class="form-check-label" for="q1A">
             Easy
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question1" id="q1B">
+          <input class="form-check-input" type="radio" name="question1" value="b" id="q1B">
           <label class="form-check-label" for="q1B">
             Easy+
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question1" id="q1C">
+          <input class="form-check-input" type="radio" name="question1" value="c" id="q1C">
           <label class="form-check-label" for="q1C">
             Medium
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question1" id="q1D">
+          <input class="form-check-input" type="radio" name="question1" value="d" id="q1D">
           <label class="form-check-label" for="q1D">
             Medium+
           </label>
@@ -50,25 +50,25 @@
       <div class="form-group">
         <p>Which career path are you most interested in?</p>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question2" id="q2A">
+          <input class="form-check-input" type="radio" name="question2" value="a" id="q2A">
           <label class="form-check-label" for="q2A">
             Data science
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question2" id="q2B">
+          <input class="form-check-input" type="radio" name="question2" value="b" id="q2B">
           <label class="form-check-label" for="q2B">
             Front-end development
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question2" id="q2C">
+          <input class="form-check-input" type="radio" name="question2" value="c" id="q2C">
           <label class="form-check-label" for="q2C">
             Back-end development
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question2" id="q2D">
+          <input class="form-check-input" type="radio" name="question2" value="d" id="q2D">
           <label class="form-check-label" for="q2D">
             Systems programming
           </label>
@@ -77,25 +77,25 @@
       <div class="form-group">
         <p>Which company would you most like to work for?</p>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question3" id="q3A">
+          <input class="form-check-input" type="radio" name="question3" value="a" id="q3A">
           <label class="form-check-label" for="q3A">
             YouTube
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question3" id="q3B">
+          <input class="form-check-input" type="radio" name="question3" value="b" id="q3B">
           <label class="form-check-label" for="q3B">
             PayPal
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question3" id="q3C">
+          <input class="form-check-input" type="radio" name="question3" value="c" id="q3C">
           <label class="form-check-label" for="q3C">
             IBM
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question3" id="q3D">
+          <input class="form-check-input" type="radio" name="question3" value="d" id="q3D">
           <label class="form-check-label" for="q3D">
             Intel
           </label>
@@ -104,25 +104,25 @@
       <div class="form-group">
         <p>What would you like to be able to build?</p>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question4" id="q4A">
+          <input class="form-check-input" type="radio" name="question4" value="a" id="q4A">
           <label class="form-check-label" for="q4A">
             Something with AI
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question4" id="q4B">
+          <input class="form-check-input" type="radio" name="question4" value="b" id="q4B">
           <label class="form-check-label" for="q4B">
             An interactive website
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question4" id="q4C">
+          <input class="form-check-input" type="radio" name="question4" value="c" id="q4C">
           <label class="form-check-label" for="q4C">
             An android app
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question4" id="q4D">
+          <input class="form-check-input" type="radio" name="question4" value="d" id="q4D">
           <label class="form-check-label" for="q4D">
             An operating system
           </label>
@@ -131,25 +131,25 @@
       <div class="form-group">
         <p>What is your top priority for a coding language?</p>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question5" id="q5A">
+          <input class="form-check-input" type="radio" name="question5" value="a" id="q5A">
           <label class="form-check-label" for="q5A">
             It should be easy to learn.
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question5" id="q5B">
+          <input class="form-check-input" type="radio" name="question5" value="b" id="q5B">
           <label class="form-check-label" for="q5B">
             I want it to have a super fast runtime.
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question5" id="q5C">
+          <input class="form-check-input" type="radio" name="question5" value="c" id="q5C">
           <label class="form-check-label" for="q5C">
             I want it to be portable across different platforms.
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="radio" name="question5" id="q5D">
+          <input class="form-check-input" type="radio" name="question5" value="d" id="q5D">
           <label class="form-check-label" for="q5D">
             Once I learn it, I want to easily transfer my knowledge to other languages.
           </label>
