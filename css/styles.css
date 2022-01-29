@@ -13,3 +13,9 @@
 #pythonCard, #javaScriptCard, #javaCard, #cCard {
   display: none;
 }
+
+#invalidResponse {
+  background-color: #fba9a9;
+  color: grey;
+  font-style: oblique;
+}
