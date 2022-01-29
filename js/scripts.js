@@ -37,6 +37,7 @@ $(document).ready(function() {
     $("#javaScriptCard").hide();
     $("#javaCard").hide();
     $("#cCard").hide();
+    $("#invalidResponse").hide();
 
     // store user input data 
     const userName = $("input#name").val();
@@ -64,7 +65,7 @@ $(document).ready(function() {
         $("#cCard").show();
       }
     } else {
-      
+      $("#invalidResponse").show();
     }
     
   });

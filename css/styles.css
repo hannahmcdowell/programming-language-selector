@@ -10,7 +10,7 @@
   margin-bottom: 3em;
 }
 
-#pythonCard, #javaScriptCard, #javaCard, #cCard {
+#pythonCard, #javaScriptCard, #javaCard, #cCard, #invalidResponse {
   display: none;
 }
 
