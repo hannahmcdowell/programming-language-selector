@@ -51,7 +51,7 @@ $(document).ready(function() {
     const responses = [question1Val, question2Val, question3Val, question4Val, question5Val];
     const radioValid = isValid(responses);
     if(radioValid && userName) {
-      // append the userName to each yourName span
+      // add the text of the userName to each yourName span
       $(".yourName").text(userName);
       // find the mode of the responses
       const responsesMode = findMode(responses);
