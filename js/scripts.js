@@ -40,7 +40,7 @@ $(document).ready(function() {
     $("#invalidResponse").hide();
 
     // store user input data 
-    const userName = $("input#name").val();
+    const userName = $("input#name").val().trim();
     const question1Val = $("input:radio[name=question1]:checked").val();
     const question2Val = $("input:radio[name=question2]:checked").val();
     const question3Val = $("input:radio[name=question3]:checked").val();
