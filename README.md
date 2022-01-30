@@ -22,5 +22,21 @@ This webpage provides users with a five question quiz that determines which prog
 5. Open the `index.html` file using any internet browser to see the webpage
 
 ## Known Bugs
-* When the user leaves fields blank, the website does not direct the user to the specific field that they need to complete.
-* When the user presses the submit button, I would like the screen to automatically scroll to the bottom of the page when the results appear.
+* When the user leaves fields blank, the website does not highlight the specific fields that they need to complete.
+* When the user presses the submit button, I would like the screen to automatically scroll to the bottom of the page where the results appear. The current link does not work as intended.
+
+## Future Features
+I hope to add:
+* [Form validation](https://getbootstrap.com/docs/4.6/components/forms/#validation) using Bootstrap styling
+* Images for each programming language
+* Colorful styling using custom CSS and Bootstrap
+
+## Link
+Click [here]() to find the website on GitHub pages.
+
+## License
+[MIT](https://opensource.org/licenses/MIT)
+
+Please contact me via [email](mailto:hannah.mcdowell1@gmail.com) if you run into any issues or have questions, comments or concerns.
+
+*Copyright (c) 01/30/2022 Hannah McDowell*
